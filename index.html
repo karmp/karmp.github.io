@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Karm Patel</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <a href="#"
+              ><img
+                href="#"
+                src="./img/logo.png"
+                class="logo"
+                alt="Karm Patel Logo"
+            /></a>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-text">
+            <p>Software Developer</p>
+            <h1>
+              Hi, I'm <span>Karm</span><br />I am a software engineer<br />
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- --------------about--------------- -->
+      <div id="about">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/about_pic_me.jpg" alt="About picture of me" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello there! I am Karm Patel, a Computer Science
+              student at UC Irvine graduating in December 2024.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages:</span>
+                  <ul>
+                    <li>&bull; Python, C/C++, HTML</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Libraries/Frameworks:</span>
+                  <ul>
+                    <li>&bull; PyTorch, Streamlit, Pandas, NumPy, Unit Test</li>
+                    <li>&bull; FastAPI, OpenCV, Beautiful Soup, NLTK</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Developer Tools:</span>
+                  <ul>
+                    <li>&bull; Git/GitHub/GitLab, Jupyter NoteBook, Docker</li>
+                    <li>&bull; Linux, Bash, Terminal</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Student Researcher for Professor Alfred Chen:<br>&nbsp;&nbsp;&nbsp;<i>University of California, Irvine</i><br>&nbsp;&nbsp;&nbsp;Jun. 2024 – Aug. 2024</span>
+                  <ul>
+                    <li>
+                      &bull;  Utilized Python, LGSVL’s API, and Docker to assess Baidu’s Apollo ADS security by simulating and testing an
+                      Invisible Object Attack
+                    </li>
+                    <li>
+                      &bull;  Tested and documented attacks on Autonomous Driving Systems using CARLA and LGSVL simulators, including
+                      the Shapeshifter, RP2, and SIB stop sign attacks
+                    </li>
+                    <li>
+                      &bull; Developed and implemented new attack strategies, doubling the number of available security tests
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Undergraduate Researcher:<br>&nbsp;&nbsp;&nbsp;<i>UCI Institute of Transportation Studies</i><br>&nbsp;&nbsp;&nbsp;Oct. 2023 – May 2024</span>
+                  <ul>
+                    <li>
+                      &bull;  Explored the effectiveness of artificial intelligence models and their ability to smooth time series data
+                    </li>
+                    <li>
+                      &bull;  Led the A.I. team and developing models using Scikit-Learn and PyTorch
+                    </li>
+                    <li>
+                      &bull; Presented research findings at the BruinAI Social AI Responsibility Summit and was awarded the Most Innovative Project out of 18 presenters
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>ICS Learning Assistant: <br>&nbsp;&nbsp;&nbsp;<i>UCI</i><br>&nbsp;&nbsp;&nbsp;Jan. 2024 – March 2024</span>
+                  <ul>
+                    <li>
+                      &bull; Hosted weekly office hours for a class of 300
+                      students
+                    </li>
+                    <li>
+                      &bull; Delivered guidance to students, clarified project inquiries, and offered debugging help during in-person lab hours
+                    </li>
+                    <li>
+                      &bull; Collaborated closely with the overseeing professor to pinpoint student challenges and proactively communicated
+                      areas for enhancement to optimize learning
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Software Engineering Intern:<br>&nbsp;&nbsp;&nbsp;<i>Kavayah Cloud</i><br>&nbsp;&nbsp;&nbspJun. 2023 – Aug. 2023</span>
+                  <ul>
+                    <li>
+                      &bull; Created a program that communicates with a MongoDB database for fast and efficient data retrieval
+                    </li>
+                    <li>
+                      &bull; Utilized the Jaro-Winkler Algorithm to intelligently compare strings retrieved from the database with the input
+                      string, resulting in a 30% improvement in string matching accuracy
+                    </li>
+                    <li>
+                      &bull; Developed a FastAPI-based REST-API to streamline program usage, enhance accessibility, and provide it as a
+                      service to client
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>University of California Irvine:</span>
+                  <ul>
+                    <li>&bull; Bachelor of Science in Computer Science</li>
+                    <li>&bull; GPA: 3.93</li>
+                    <li>
+                      &bull; UROP and Interdisciplinary Team Fellows 2023 - 24
+                    </li>
+                    <li>&bull; Expected Graduation: December 2024</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Relavent Coursework:</span>
+                  <ul>
+                    <li>&bull; Design and Analysis of Algorithms</li>
+                    <li>&bull; Machine Learning and Data Mining</li>
+                    <li>&bull; Formal Language and Automata Theory</li>
+                    <li>&bull; Data Structures and Algorithms</li>
+                    <li>&bull; Principles in System Design</li>
+                    <li>&bull; Information Retrieval</li>
+                    <li>&bull; Data Management</li>
+                    <li>&bull; Computational Geometry</li>
+                    <li>&bull; Software Testing and Quality Assurance</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------Portfoilio--------------- -->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <p>Here are some of my projects I am the most proud of.</p>
+          <div class="work-list">
+            <!-- TODO Temporarily choose these images change with project images later -->
+            <div class="work">
+              <img
+                src="./rsrc/search_engine.gif"
+                alt="A gif showing a
+              search engine I wrote from scratch running"
+                width="400"
+                height="300"
+              />
+              <div class="layer">
+                <h2>Search Engine</h2>
+                <p>
+                  Efficiently indexes gigabytes of web pages and can scale with
+                  expanding data sizes. Developed an interactive web GUI with
+                  Streamlit to dynamically displays query time and search
+                  results for each query. Search engine achieves sub-300ms
+                  ranked searches by leveraging TF-IDF scores and other
+                  heuristics to yield search results similar to Google’s.
+                </p>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="rsrc/sudoku_solver.gif"
+                alt="A gif showing a sudoku solver I made"
+                width="400"
+                height="300"
+              />
+              <div class="layer">
+                <h2>Computer Vision Sudoku Solver</h2>
+                <p>
+                  Developed a Sudoku Solver featuring backtracking search and an
+                  intuitive GUI for enhanced user experience. Implemented image
+                  pre-processing with OpenCV to transform user-uploaded Sudoku
+                  board images into a format compatible for a neural network to
+                  perform accurate predictions. Leveraged PyTorch to train a
+                  neural network on the MNIST dataset and achieved a 96%
+                  accuracy in predictions. Applied the trained model to extract
+                  the numbers from user-uploaded Sudoku board images.
+                </p>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="rsrc/music_tracker.png"
+                alt=""
+                width="400"
+                height="300"
+              />
+              <div class="layer">
+                <h2>Music Release Tracker</h2>
+                <p>
+                  Wrote a program to scrape websites and parse their web page
+                  contents using Beautiful Soup to extract the release dates of
+                  new songs. Developed a Discord bot that interacts with
+                  Discord’s API to present the parsed information in a readable
+                  format to the user. Self-hosted the bot on a Docker container
+                  within an Ubuntu server to ensure a continuous and reliable
+                  access. Deployed the bot across multiple Discord communities
+                  totaling over 1,600 members.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+      </div>
+      <!-- --------------Contact------------- -->
+      <div id="contact">
+        <div class="container">
+          <div class="contact-col">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>Replace the information in brackets with the corresponding symbol to form my email:<br> karm [dot] patel0315 [at] gmail [dot] com</p>
+            <p></p>
+            <a href="https://www.linkedin.com/in/-karmp">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
+                alt="LinkedIn"
+                width="32"
+                height="32"
+            /></a>
+            <a href="https://github.com/karmp">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                alt="GitHub"
+                width="32"
+                height="32"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+    </header>
+  </body>
+</html>
