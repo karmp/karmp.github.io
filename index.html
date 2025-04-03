@@ -2,298 +2,266 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Karm Patel</title>
-    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css" />
+    <title>Karm Patel Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body>
-    <header>
-      <div id="header">
-        <div class="container">
-          <nav>
-            <a href="#"
-              ><img
-                href="#"
-                src="./img/logo.png"
-                class="logo"
-                alt="Karm Patel Logo"
-            /></a>
+  <body style="background-color: rgb(250, 250, 250);">
+    <nav id="desktop-nav">
+      <div class="logo">Karm Patel</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Karm Patel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about_pic_me.jpg" alt="Karm Patel profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm Karm Patel, a software engineer. I earned my Bachelor of Science in Computer Science 
+                                    graduate from the University of California, Irvine and specialized in Intelligent Systems. I am 
+                                    currently looking for full-time backend software engineering and DevOPs roles.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/LI-In-Bug.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/-karmp')""
+          />
+          <img
+            src="./assets/github-mark.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/karmp')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Education</h2>
+            <div class="article-container">
+              <ul>
+                <h3>University of California Irvine</h3>
+                <p>Bachelor of Science in Computer Science 
+                  <br> GPA: 3.93 
+                  <br> UROP and Interdisciplinary Team Fellows 2023 - 24
+                </p>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <ul>
+                <h3>Languages:</h3>
+                <p>Python, C/C++, HTML, SQL, MIPS Assembly</p>
+                <h3>Libraries/Frameworks:</h3>
+                <p>PyTorch, Streamlit, Pandas, NumPy, Unit Test, FastAPI, Matplotlib, Scikit-Learn, NLTK</p>
+                <h3>Developer Tools:</h3>
+                <p>Git, GitHub, GitLab, Docker, Linux, Bash, Terminal</p>
+                <h3>Certifications</h3>
+                <p>AWS Certified Solutions Architect - Assocaiate, earned February 2025</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Student Researcher</h2>
+            <p>University of California, Irvine<br> (Jun. 2024 – Aug. 2024)</p>
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>Tested attacks on Autonomous Driving Systems using the CARLA and LGSVL simulators</li>
+              <li>Documented attacks including the Shapeshifter, RP2, and SIB stop sign attacks on a custom Autonomous Driving Systems (ADS)</li>
+              <li>Simulated Invisible Object Attack on Baidu’s Apollo ADS to test its security leveraging LGSVL’s API and Docker</li>
+              <li>Implemented new attack strategies, doubling the number of available security tests</li>
             </ul>
-          </nav>
-          <div class="header-text">
-            <p>Software Developer</p>
-            <h1>
-              Hi, I'm <span>Karm</span><br />I am a software engineer<br />
-            </h1>
           </div>
-        </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Learning Assistant for Data Structure Implementation and Analysis (ICS 46)</h2>
+            <p>University of California, Irvine<br> (Mar. 2024 – Jun. 2024)</p>
+            <ul>
+              <li>Provided conceptual conceptual support to 300+ students during lectures, enhancing comprehension of advanced data structure topics</li>
+              <li>Guided students through solving complex problems involving various data structures and algorithms</li>
+            </ul>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Learning Assistant for Programming with Software Libraries (ICS 32)</h2>
+            <p>University of California, Irvine<br> (Jan. 2024 – Mar. 2024)</p>
+            <ul>
+              <li>Hosted weekly office hours for a class of 300 students, providing programming and conceptual assistance</li>
+              <li>Delivered guidance to students, clarified project inquiries, and offered debugging help during in-person lab hours</li>
+              <li>Collaborated closely with the overseeing professor to pinpoint student challenges and proactively communicated
+                areas for improvement</li>
+            </ul>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineering Intern</h2>
+            <p>Kavayah Cloud<br> (Jun. 2023 – Aug. 2023)</p>
+            <ul>
+              <li>Developed Python software that takes a string of software names as input and returns their standardized versions</li>
+              <li>Achieved a 30% improvement in matching accuracy by algorithmically comparing retrieved strings with input</li>
+              <li>Developed a REST-API to streamline program usage, enhance accessibility, and provide it as a service</li>
+            </ul>
+          </div>
       </div>
-      <!-- --------------about--------------- -->
-      <div id="about">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="img/about_pic_me.jpg" alt="About picture of me" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/resume_tailorizer.jpg"
+                alt="Search Engine Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Automated Resume Tailorizer</h2>
             <p>
-              Hello there! I am Karm Patel, a software engineer.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Languages:</span>
-                  <ul>
-                    <li>&bull; Python, C/C++, HTML</li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Libraries/Frameworks:</span>
-                  <ul>
-                    <li>&bull; PyTorch, Streamlit, Pandas, NumPy, Unit Test</li>
-                    <li>&bull; FastAPI, OpenCV, Beautiful Soup, NLTK</li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Developer Tools:</span>
-                  <ul>
-                    <li>&bull; Git/GitHub/GitLab, Jupyter NoteBook, Docker</li>
-                    <li>&bull; Linux, Bash, Terminal</li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Certifications:</span>
-                  <ul>
-                    <li>&bull; AWS Certified Solutions Architect - Assocaiate, earned February 2025
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+              Designed and developed a scalable full-stack web application that automates the process of tailoring resumes
+              to specific job descriptions. Built using Python, AWS Lambda, API Gateway, and Next.js, the application leverages 
+              serverless architecture for high availability and scalability.
 
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>Student Researcher for Professor Alfred Chen:<br>&nbsp;&nbsp;&nbsp;<i>University of California, Irvine</i><br>&nbsp;&nbsp;&nbsp;Jun. 2024 – Aug. 2024</span>
-                  <ul>
-                    <li>
-                      &bull;  Utilized Python, LGSVL’s API, and Docker to assess Baidu’s Apollo ADS security by simulating and testing an
-                      Invisible Object Attack
-                    </li>
-                    <li>
-                      &bull;  Tested and documented attacks on Autonomous Driving Systems using CARLA and LGSVL simulators, including
-                      the Shapeshifter, RP2, and SIB stop sign attacks
-                    </li>
-                    <li>
-                      &bull; Implemented new attack strategies, doubling the number of available security tests
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Undergraduate Researcher:<br>&nbsp;&nbsp;&nbsp;<i>UCI Institute of Transportation Studies</i><br>&nbsp;&nbsp;&nbsp;Oct. 2023 – May 2024</span>
-                  <ul>
-                    <li>
-                      &bull;  Explored the effectiveness of artificial intelligence models and their ability to smooth time series data
-                    </li>
-                    <li>
-                      &bull;  Led the A.I. team and developing models using Scikit-Learn and PyTorch
-                    </li>
-                    <li>
-                      &bull; Presented research findings at the BruinAI Social AI Responsibility Summit and was awarded the Most Innovative Project out of 18 presenters
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>ICS Learning Assistant: <br>&nbsp;&nbsp;&nbsp;<i>UCI</i><br>&nbsp;&nbsp;&nbsp;Jan. 2024 – March 2024</span>
-                  <ul>
-                    <li>
-                      &bull; Hosted weekly office hours for a class of 300
-                      students
-                    </li>
-                    <li>
-                      &bull; Delivered guidance to students, clarified project inquiries, and offered debugging help during in-person lab hours
-                    </li>
-                    <li>
-                      &bull; Collaborated closely with the overseeing professor to pinpoint student challenges and proactively communicated
-                      areas for enhancement to optimize learning
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Software Engineering Intern:<br>&nbsp;&nbsp;&nbsp;<i>Kavayah Cloud</i><br>&nbsp;&nbsp;&nbspJun. 2023 – Aug. 2023</span>
-                  <ul>
-                    <li>
-                      &bull; Created a program that communicates with a MongoDB database for fast and efficient data retrieval
-                    </li>
-                    <li>
-                      &bull; Utilized the Jaro-Winkler Algorithm to intelligently compare strings retrieved from the database with the input
-                      string, resulting in a 30% improvement in string matching accuracy
-                    </li>
-                    <li>
-                      &bull; Developed a FastAPI-based REST-API to streamline program usage, enhance accessibility, and provide it as a
-                      service to client
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              The system integrates a Large Language Model (LLM) to intelligently parse resume data and job descriptions, 
+              generating customized resume content that aligns with job requirements. By automating key aspects of resume 
+              optimization, the application reduces manual editing time by 50% and delivers personalized resumes in under 30 seconds.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://resume-tailorizer.vercel.app/', '_blank')">
+                View Project
+              </button>
             </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>University of California Irvine:</span>
-                  <ul>
-                    <li>&bull; Bachelor of Science in Computer Science</li>
-                    <li>&bull; GPA: 3.93</li>
-                    <li>
-                      &bull; UROP and Interdisciplinary Team Fellows 2023 - 24
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>Relavent Coursework:</span>
-                  <ul>
-                    <li>&bull; Design and Analysis of Algorithms</li>
-                    <li>&bull; Machine Learning and Data Mining</li>
-                    <li>&bull; Formal Language and Automata Theory</li>
-                    <li>&bull; Data Structures and Algorithms</li>
-                    <li>&bull; Principles in System Design</li>
-                    <li>&bull; Information Retrieval</li>
-                    <li>&bull; Data Management</li>
-                    <li>&bull; Computational Geometry</li>
-                    <li>&bull; Software Testing and Quality Assurance</li>
-                  </ul>
-                </li>
-              </ul>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/search_engine.gif"
+                alt="Search Engine Project"
+                class="project-img"
+              />
             </div>
+            <h2 class="experience-sub-title project-title">Search Engine</h2>
+            <p>
+              As part of a class project, I contributed to the development of a high-performance, scalable search engine
+              and web page indexer capable of efficiently processing gigabytes or more of web data without exceeding memory constraints.
+              The system was built in Python and designed to handle large-scale indexing while maintaining optimal retrieval speeds. 
+
+              The search engine achieves sub-300ms ranked searches by leveraging TF-IDF scoring and additional heuristics, 
+              delivering search results comparable to Google’s in relevance and ranking. To enhance usability, I helped develop 
+              an interactive web GUI using Streamlit, allowing users to dynamically explore and refine search results for an improved experience.
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sudoku_solver.gif"
+                alt="Sudoku Solver Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Computer Vision Sudoku Solver</h2>
+            <p>Developed an advanced Sudoku solver utilizing backtracking search, paired with an intuitive GUI for seamless user interaction. 
+              The solver efficiently finds solutions to Sudoku puzzles of varying difficulty levels.
+
+              To further enhance usability, I engineered a custom Convolutional Neural Network (CNN) using PyTorch, 
+              trained on the MNIST dataset, achieving 96% accuracy in digit recognition. This CNN powers a data pipeline 
+              that processes, transforms, and extracts digits from user-uploaded Sudoku images, allowing users to quickly 
+              digitize a Sudoku board for automated solving.
+              
+              Built entirely in Python, this project combines traditional algorithmic problem-solving with deep learning,
+              providing an interactive and intelligent Sudoku experience.</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/karmp/sudoku-solver', '_blank')">
+                  View on GitHub
+                </button>
+              </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/music_tracker.png"
+                alt="Music Release Tracker Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Music Release Tracker</h2>
+            <p>Developed and deployed a Discord bot that tracks and presents new song release dates across 
+              multiple Discord communities with a combined user base of over a thousand. Built using Python and 
+              Beautiful Soup, the bot scrapes release date information from various music blogs and formats the data into structured responses.
+
+              Users can interact with the bot through Discord commands to view release dates for current, past,
+               or upcoming months, as long as the information remains available on the source websites. The bot 
+               dynamically fetches data upon request rather than relying on scheduled updates, ensuring that users always receive the most up-to-date information.
+              
+              By integrating this tool across multiple Discord servers, I provided music enthusiasts with an 
+              easy-to-use resource for discovering new releases, improving engagement within these communities.</p>
           </div>
         </div>
       </div>
-      <!-- --------------Portfoilio--------------- -->
-      <div id="portfolio">
-        <div class="container">
-          <h1 class="sub-title">My Projects</h1>
-          <p>Here are some of my projects I am the most proud of.</p>
-          <div class="work-list">
-            <!-- TODO Temporarily choose these images change with project images later -->
-            <div class="work">
-              <img
-                src="./rsrc/search_engine.gif"
-                alt="A gif showing a
-              search engine I wrote from scratch running"
-                width="400"
-                height="300"
-              />
-              <div class="layer">
-                <h2>Search Engine</h2>
-                <p>
-                  Efficiently indexes gigabytes of web pages and can scale with
-                  expanding data sizes. Developed an interactive web GUI with
-                  Streamlit to dynamically displays query time and search
-                  results for each query. Search engine achieves sub-300ms
-                  ranked searches by leveraging TF-IDF scores and other
-                  heuristics to yield search results similar to Google’s.
-                </p>
-              </div>
-            </div>
-            <div class="work">
-              <img
-                src="rsrc/sudoku_solver.gif"
-                alt="A gif showing a sudoku solver I made"
-                width="400"
-                height="300"
-              />
-              <div class="layer">
-                <h2>Computer Vision Sudoku Solver</h2>
-                <p>
-                  Developed a Sudoku Solver featuring backtracking search and an
-                  intuitive GUI for enhanced user experience. Implemented image
-                  pre-processing with OpenCV to transform user-uploaded Sudoku
-                  board images into a format compatible for a neural network to
-                  perform accurate predictions. Leveraged PyTorch to train a
-                  neural network on the MNIST dataset and achieved a 96%
-                  accuracy in predictions. Applied the trained model to extract
-                  the numbers from user-uploaded Sudoku board images.
-                </p>
-              </div>
-            </div>
-            <div class="work">
-              <img
-                src="rsrc/music_tracker.png"
-                alt=""
-                width="400"
-                height="300"
-              />
-              <div class="layer">
-                <h2>Music Release Tracker</h2>
-                <p>
-                  Wrote a program to scrape websites and parse their web page
-                  contents using Beautiful Soup to extract the release dates of
-                  new songs. Developed a Discord bot that interacts with
-                  Discord’s API to present the parsed information in a readable
-                  format to the user. Self-hosted the bot on a Docker container
-                  within an Ubuntu server to ensure a continuous and reliable
-                  access. Deployed the bot across multiple Discord communities
-                  totaling over 1,600 members.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <a href="#" class="btn">See more</a> -->
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <p class="email-instruction">To form my email, replace the info in brackets with their corresponding symbol</p>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>karm [dot] patel0315 [at] gmail [dot] com</p>
         </div>
       </div>
-      <!-- --------------Contact------------- -->
-      <div id="contact">
-        <div class="container">
-          <div class="contact-col">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>Replace the information in brackets with the corresponding symbol to form my email:<br> karm [dot] patel0315 [at] gmail [dot] com</p>
-            <p></p>
-            <a href="https://www.linkedin.com/in/-karmp">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
-                alt="LinkedIn"
-                width="32"
-                height="32"
-            /></a>
-            <a href="https://github.com/karmp">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-                alt="GitHub"
-                width="32"
-                height="32"
-            /></a>
-          </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-      </div>
-      <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-          for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-          }
-          for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-          }
-          event.currentTarget.classList.add("active-link");
-          document.getElementById(tabname).classList.add("active-tab");
-        }
-      </script>
-    </header>
+      </nav>
+    <script src="script.js"></script>
   </body>
 </html>
