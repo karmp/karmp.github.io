@@ -398,6 +398,8 @@ article {
 article .icon {
   cursor: default;
 }
+
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -418,7 +420,7 @@ article .icon {
 #projects .about-containers {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
-  gap: 2rem;
+  gap: 2.5rem;
   width: 100%;
   justify-content: center;
 }
@@ -431,7 +433,7 @@ article .icon {
   height: 600px; /* Fixed height for all containers */
   border-radius: 2rem;
   overflow: hidden;
-  width: 100%; /* Take full width of grid cell */
+  width: 90%; /* Take full width of grid cell */
   max-width: 500px; /* Increased maximum width for 2-column layout */
   margin: 0 auto; /* Center in grid cell */
 }
@@ -497,14 +499,36 @@ article .icon {
   transform: translateY(-2px);
 }
 
-/* Make it responsive - switch to 1 column on smaller screens */
-@media (max-width: 900px) {
+/* Make it responsive - switch to 1 column on medium screens */
+@media (max-width: 1200px) {
   #projects .about-containers {
-    grid-template-columns: 1fr; /* 1 column on smaller screens */
+    grid-template-columns: 1fr; /* 1 column on medium screens */
   }
   
   .color-container {
-    max-width: 100%; /* Full width on smaller screens */
+    max-width: 600px; /* Slightly wider containers when in single column */
+  }
+  
+  #projects .experience-details-container {
+    max-width: 800px; /* Adjust container width for single column */
+  }
+}
+
+/* Additional adjustments for smaller screens */
+@media (max-width: 768px) {
+  section {
+    margin: 0 5rem; /* Reduce side margins on smaller screens */
+  }
+  
+  .color-container {
+    max-width: 100%;
+  }
+}
+
+/* Further adjustments for mobile screens */
+@media (max-width: 480px) {
+  section {
+    margin: 0 2rem; /* Minimal margins on very small screens */
   }
 }
 
