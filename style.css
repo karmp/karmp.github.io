@@ -177,8 +177,8 @@ section {
 }
 
 .section__pic-container img {
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: auto;
   object-fit: fill; /* This ensures the image covers the container without distortion */
   border-radius: 5%; /* Apply the same border-radius to the image */
 }
@@ -358,13 +358,14 @@ section {
   margin: 0 auto; /* This centers the container */
 }
 
-.details-container {
+#experience .details-container {
   padding: 1.5rem;
   background: rgb(255, 255, 255);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: left; /* Changed from center to left */
+  align-self: center;
 }
 
 .experience-sub-title {
@@ -430,9 +431,10 @@ article .icon {
   gap: 2.5rem;
   width: 100%;
   justify-content: center;
+  align-self: center;
 }
 
-.color-container {
+#project .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(255, 255, 255);
   display: flex;
@@ -478,6 +480,7 @@ article .icon {
   font-size: 0.9rem;
   flex-grow: 1; /* Allow paragraph to fill remaining space */
   overflow-y: auto; /* Add scrollbar if content is too long */
+  max-height: 200px;
 }
 
 /* Project button styles */
