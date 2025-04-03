@@ -176,6 +176,13 @@ section {
   margin: auto 0;
 }
 
+.section__pic-container img {
+  width: 400px;
+  height: 400px;
+  object-fit: fill; /* This ensures the image covers the container without distortion */
+  border-radius: 5%; /* Apply the same border-radius to the image */
+}
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -443,6 +450,7 @@ article .icon {
   width: 100%;
   overflow: hidden;
   flex-shrink: 0; /* Prevent shrinking */
+  border-radius: 1rem;
 }
 
 .project-img {
@@ -450,10 +458,12 @@ article .icon {
   height: 100%;
   object-fit: fill;
   transition: transform 0.3s ease;
+  border-radius: 3%;
 }
 
 .article-container:hover .project-img {
   transform: scale(1.1);
+  border-radius: 3%;
 }
 
 .project-title {
