@@ -581,6 +581,12 @@ article .icon {
   min-height: 30px;
 }
 
+.invisible-btn {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  cursor: default;
+}
 
 
 /* CONTACT */
