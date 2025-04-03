@@ -434,7 +434,7 @@ article .icon {
   align-self: center;
 }
 
-#project .color-container {
+#projects .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(255, 255, 255);
   display: flex;
