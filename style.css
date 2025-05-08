@@ -234,6 +234,8 @@ section {
   justify-content: center;
   gap: 1rem;
   margin-top: auto; /* Push button container to the bottom in flex column */
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .btn {
