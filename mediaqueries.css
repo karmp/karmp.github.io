@@ -3,12 +3,8 @@
     height: 83vh;
     margin-bottom: 6rem;
   }
-  .about-containers {
+  .about-grid {
     flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
   }
 }
 
@@ -20,19 +16,11 @@
     display: flex;
   }
   #experience,
-  .experience-details-container {
+  .experience-list {
     margin-top: 2rem;
   }
-  #profile,
-  .section-container {
+  #profile {
     display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
   }
   section {
     margin: 0 5%;
@@ -42,9 +30,16 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
-  .about-containers {
+
+  .about-grid {
     margin-top: 0;
   }
+
+  #projects .projects-grid {
+     grid-template-columns: 1fr;
+     gap: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -63,7 +58,7 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .about-containers,
+  .about-grid,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
@@ -87,23 +82,30 @@
     text-align: center;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 55vw; /* Changed width to match height */
+    height: 55vw;
     justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
+    margin: 0 auto 1rem; /* Adjusted margin for smaller screens */
   }
   .title {
     font-size: 2rem;
   }
-  .text-container {
-    text-align: justify;
+
+  #projects .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #projects .project-card {
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .experience-details-container {
+  .experience-list {
     max-width: 90%;
   }
 }

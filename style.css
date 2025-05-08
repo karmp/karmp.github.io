@@ -5,10 +5,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensure consistent box model */
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(250, 250, 250); /* Moved body background here */
 }
 
 html {
@@ -102,6 +104,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  z-index: 10; /* Ensure menu is above other content */
 }
 
 .menu-links a {
@@ -150,14 +153,15 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  padding-bottom: 4vh; /* Added padding-bottom to general section */
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  height: auto; /* Set height to auto */
 }
 
 .section-container {
-  display: flex;
+  display: flex; /* This class doesn't seem to be used in index.html */
 }
 
 /* PROFILE SECTION */
@@ -166,7 +170,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 80vh; /* Keep fixed height for profile */
+  padding-bottom: 0; /* Remove extra padding-bottom from general section */
 }
 
 .section__pic-container {
@@ -174,13 +179,14 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  flex-shrink: 0;
 }
 
 .section__pic-container img {
-  width: auto;
-  height: auto;
-  object-fit: fill; /* This ensures the image covers the container without distortion */
-  border-radius: 5%; /* Apply the same border-radius to the image */
+  width: 100%; /* Use 100% width to fill container */
+  height: 100%; /* Use 100% height to fill container */
+  object-fit: cover; /* Cover the container without distortion */
+  border-radius: 5%;
 }
 
 .section__text {
@@ -196,7 +202,7 @@ section {
   text-align: center;
 }
 
-.section__text__p2 {
+.section__text__p2 { /* This class is not used in index.html */
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -204,6 +210,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 2rem; /* Added margin below title */
 }
 
 #socials-container {
@@ -226,6 +233,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: auto; /* Push button container to the bottom in flex column */
 }
 
 .btn {
@@ -264,48 +272,42 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container {
-  gap: 1rem;
-}
-
 /* ABOUT SECTION */
 
 #about {
   position: relative;
-  height: auto;
-  padding-bottom: 4vh;
 }
 
-.about-containers {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-.about-details-container {
+.about-content { /* Renamed from about-details-container */
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
 }
 
-.details-container {
+.about-grid { /* Renamed from about-containers */
+  display: flex; /* Keeping flex for this level as in original */
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-item { /* Renamed from details-container */
   padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: left; /* Change to left alignment */
-  height: auto; /* Auto height */
-  min-width: 300px; /* Minimum width */
+  text-align: left;
+  height: auto;
+  min-width: 300px;
+  display: flex; /* Make item a flex container */
+  flex-direction: column; /* Stack content vertically */
 }
 
-/* Fix the article container in the about section */
-#about .article-container {
+.about-item__content { /* Renamed from article-container */
   display: flex;
   flex-direction: column;
   height: auto;
@@ -314,8 +316,7 @@ section {
   align-items: flex-start;
 }
 
-/* Fix the ul in the about section */
-#about .article-container ul {
+.about-item__content ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -323,24 +324,21 @@ section {
   text-align: left;
 }
 
-/* Fix the h3 in the about section */
-#about .article-container h3 {
+.about-item__content h3 {
   text-align: left;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   width: 100%;
 }
 
-/* Fix the p in the about section */
-#about .article-container p {
+.about-item__content h3:first-child {
+  margin-top: 0;
+}
+
+.about-item__content p {
   text-align: left;
   margin-bottom: 1rem;
   width: 100%;
-}
-
-/* Fix the first h3 in each container */
-#about .article-container h3:first-child {
-  margin-top: 0;
 }
 
 
@@ -348,236 +346,143 @@ section {
 
 #experience {
   position: relative;
+   margin-top: 4vh; /* Added margin-top to separate from About */
 }
 
-.experience-details-container {
+.experience-list { /* Renamed from experience-details-container */
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* This creates space between the containers */
-  max-width: 800px; /* Adjust this value to control the width */
-  margin: 0 auto; /* This centers the container */
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto 0; /* Added top margin and centered */
 }
 
-#experience .details-container {
+.experience-item { /* Renamed from details-container */
   padding: 1.5rem;
   background: rgb(255, 255, 255);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: left; /* Changed from center to left */
+  text-align: left;
   align-self: center;
+  width: 100%; /* Ensure items take full width of container */
 }
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
+.experience-item p {
   margin-bottom: 1rem;
 }
 
-.details-container p {
-  margin-bottom: 1rem;
-}
-
-.details-container ul {
+.experience-item ul {
   padding-left: 1.5rem;
 }
 
-.details-container li {
+.experience-item li {
   margin-bottom: 0.5rem;
 }
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
 
 /* PROJECTS SECTION */
 
 #projects {
   position: relative;
-  height: auto;
-  padding-bottom: 4vh;
+  margin-top: 4vh; /* Added margin-top to separate from Experience */
 }
 
-#projects .experience-details-container {
+.projects-container { /* Renamed from experience-details-container */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
   max-width: 1200px; /* Reduced max-width for 2 columns */
-  margin: 0 auto;
+  margin: 2rem auto 0; /* Added top margin and centered */
 }
 
-#projects .about-containers {
+.projects-grid { /* Renamed from about-containers */
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   width: 100%;
   justify-content: center;
   align-self: center;
 }
 
-#projects .color-container {
+.project-card { /* Renamed from details-container color-container */
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  height: 600px; /* Fixed height for all containers */
+  /* height: 600px; REMOVED */
   border-radius: 2rem;
   overflow: hidden;
-  width: 90%; /* Take full width of grid cell */
+  width: 100%; /* Use 100% width within grid cell */
   max-width: 500px; /* Increased maximum width for 2-column layout */
   margin: 0 auto; /* Center in grid cell */
 }
 
-.article-container {
-  height: 250px;
+.project-card__image-container { /* Renamed from article-container */
+  height: 300px;
   width: 100%;
   overflow: hidden;
-  flex-shrink: 0; /* Prevent shrinking */
-  border-radius: 1rem;
+  flex-shrink: 0;
+
+  border-radius: 1rem 1rem 0 0; /* Apply border radius only to top corners */
 }
 
 .project-img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: fill; /* Use cover to ensure image fills container */
   transition: transform 0.3s ease;
-  border-radius: 3%;
+  /* Removed border-radius here, applied to container */
 }
 
-.article-container:hover .project-img {
+.project-card__image-container:hover .project-img {
   transform: scale(1.1);
-  border-radius: 3%;
 }
 
 .project-title {
   margin: 0.5rem 1rem;
   color: black;
   font-size: 1.5rem;
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0;
 }
 
-.color-container p {
-  padding: 0 1rem;
-  font-size: 0.9rem;
-  flex-grow: 1; /* Allow paragraph to fill remaining space */
-  overflow-y: auto; /* Add scrollbar if content is too long */
-  max-height: 200px;
-}
-
-/* Project button styles */
-.btn-container {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-  flex-shrink: 0; /* Prevent shrinking */
-}
-
-.project-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.8rem 1.5rem;
-  background-color: white;
-  color: black;
-  border: 1px solid rgb(163, 163, 163);
-  border-radius: 2rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.project-btn:hover {
-  background-color: rgb(0, 0, 0);
-  transform: translateY(-2px);
-}
-
-/* Make it responsive - switch to 1 column on medium screens */
-@media (max-width: 1200px) {
-  #projects .about-containers {
-    grid-template-columns: 1fr; /* 1 column on medium screens */
-  }
-  
-  .color-container {
-    max-width: 600px; /* Slightly wider containers when in single column */
-  }
-  
-  #projects .experience-details-container {
-    max-width: 800px; /* Adjust container width for single column */
-  }
-}
-
-/* Additional adjustments for smaller screens */
-@media (max-width: 768px) {
-  section {
-    margin: 0 5rem; /* Reduce side margins on smaller screens */
-  }
-  
-  .color-container {
-    max-width: 100%;
-  }
-}
-
-/* Further adjustments for mobile screens */
-@media (max-width: 480px) {
-  section {
-    margin: 0 2rem; /* Minimal margins on very small screens */
-  }
-}
-
-/* Modern Scrollbar Styling */
-.color-container p {
+.project-card p {
   padding: 0 1rem;
   font-size: 0.9rem;
   flex-grow: 1;
   overflow-y: auto;
-  
+  max-height: 200px;
+}
+
+/* Modern Scrollbar Styling */
+.project-card p {
   /* For Firefox */
   scrollbar-width: thin;
   scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
 }
 
 /* For Chrome, Edge, and Safari */
-.color-container p::-webkit-scrollbar {
+.project-card p::-webkit-scrollbar {
   width: 6px;
 }
 
-.color-container p::-webkit-scrollbar-track {
+.project-card p::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.color-container p::-webkit-scrollbar-thumb {
+.project-card p::-webkit-scrollbar-thumb {
   background-color: rgba(155, 155, 155, 0.5);
   border-radius: 10px;
   border: none;
 }
 
-.color-container p::-webkit-scrollbar-thumb:hover {
+.project-card p::-webkit-scrollbar-thumb:hover {
   background-color: rgba(155, 155, 155, 0.8);
 }
 
 /* Hide scrollbar when not in use (optional) */
-.color-container p::-webkit-scrollbar-thumb:vertical {
+.project-card p::-webkit-scrollbar-thumb:vertical {
   min-height: 30px;
 }
 
@@ -595,7 +500,16 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 70vh; /* Keep fixed height for contact */
+  margin-top: 4vh; /* Added margin-top to separate from Projects */
+  padding-top: 0; /* Remove extra padding-top from general section */
+}
+
+.email-instruction {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #666;
 }
 
 .contact-info-upper-container {
@@ -604,7 +518,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250); /* Corrected background color */
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -634,20 +548,21 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  display: flex; /* Make footer a flex container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack content vertically */
+  text-align: center;
+}
+
+footer nav {
+  margin-bottom: 1rem; /* Add some space below the footer nav */
 }
 
 footer p {
   text-align: center;
 }
 
-.details-container p {
-  margin-top: auto;
-  margin-bottom: 1rem; /* Adjust as needed */
-}
 
-.email-instruction {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-style: italic;
-  color: #666;
-}
+/* MEDIA QUERIES - Ensure these are reviewed and potentially updated */
+/* (Assuming mediaqueries.css handles responsiveness) */
