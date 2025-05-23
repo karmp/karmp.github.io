@@ -1,0 +1,2 @@
+1. Re-write personal website in React
+2. Load information from JSON file in repo
