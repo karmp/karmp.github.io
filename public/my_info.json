@@ -1,0 +1,91 @@
+{
+  "Introduction": "Hello, I'm Karm Patel, a software engineer. I earned my Bachelor of Science in Computer Science graduate from the University of California, Irvine and specialized in Intelligent Systems. I am currently looking for full-time backend software engineering and DevOPs roles.",
+  "LinkedIn": "https://www.linkedin.com/in/-karmp",
+  "GitHub": "https://github.com/karmp",
+  "About Me": {
+    "Education": [
+      {
+        "University Name": "University of California, Irvine",
+        "Degree": "Bachelor of Science in Computer Science",
+        "GPA": 3.93,
+        "Other Info": ["UROP and Interdisciplinary Team Fellows 2023 - 24"]
+      }
+    ],
+
+    "Skills": {
+      "Languages": ["Python", "C/C++", "JavaScript", "HTML/CSS", "SQL", "MIPS Assembly"],
+      "Libraries/Frameworks": ["PyTorch", "React", "Streamlit", "Pandas", "NumPy", "Unit Test", "FastAPI", "Matplotlib", "Scikit-Learn", "NTLK"],
+      "Developer Tools": ["Git", "GitHub", "GitLab", "Docker", "Linux", "Bash", "Terminal"],
+      "Certifications": ["AWS Certified Solutions Architect - Assocaiate, earned February 2025"]
+    }
+  },
+
+  "Experience": [
+    {
+      "Title": "Learning Assistant for Data Structure Implementation and Analysis (ICS 46)",
+      "Company": "University of California, Irvine",
+      "Dates": "Sep. 2024 - Dec. 2024",
+      "Highlights": [
+        "Provided conceptual conceptual support to 300+ students during lectures, enhancing comprehension of advanced data structure topics",
+        "Guided students through solving complex problems involving various data structures and algorithms"
+      ]
+    },
+    {
+        "Title": "Research Assistant",
+        "Company": "University of California, Irvine",
+        "Dates": "Jun. 2024 - Aug. 2024",
+        "Highlights": [
+            "Increased the number of available security tests for Autonomous Driving Systems (ADS) by 2x",
+            "Validated existing research on adversarial attacks by testing two ADSs with CARLA and LGSVL simulators",
+            "Simulated Shapeshifter, RP2, and SIB stop sign attacks and discovered custom ADS failed in 33% of simulations"
+        ]
+      },
+      {
+        "Title": "Learning Assistant for Programming with Software Libraries (ICS 32)",
+        "Company": "University of California, Irvine",
+        "Dates": "Jan. 2024 - Mar. 2024",
+        "Highlights": [
+            "Hosted weekly office hours for a class of 300 students, providing programming and conceptual assistance",
+            "Improved student success by clarifying project inquiries and providing debugging assistance during in-person lab",
+            "Proactively communicated student challenges to overseeing Professor, enabling clarification of common misconceptions to students"
+        ]
+      },
+      {
+        "Title": "Software Engineering Intern",
+        "Company": "Kavayah Cloud",
+        "Dates": "Jun. 2023 - Aug. 2023",
+        "Highlights": [
+            "Developed Python software that takes a string of software names as input and returns their standardized versions",
+            "Achieved a 30% improvement in matching accuracy by algorithmically comparing retrieved strings with input",
+            "Developed a REST-API to streamline program usage, enhance accessibility, and provide it as a service"
+        ]
+      } 
+  ],
+
+  "Projects": [
+    {
+      "mediaSource": "/resume_tailorizer.jpg",
+      "Title": "Automated Resume Tailorizer",
+      "Description": "Designed and developed a scalable full-stack web application that automates the process of tailoring resumes to specific job descriptions. Built using Python, AWS Lambda, API Gateway, and Next.js, the application leverages serverless architecture for high availability and scalability. \nThe system integrates a Large Language Model (LLM) to intelligently parse resume data and job descriptions, generating customized resume content that aligns with job requirements. By automating key aspects of resume optimization, the application reduces manual editing time by 50% and delivers personalized resumes in under 30 seconds.",
+      "Link": "https://resume-tailorizer.vercel.app/"
+    },
+    {
+        "mediaSource": "/search_engine.gif",
+        "Title": "UC Irvine Search Engine",
+        "Description": "As part of a class project, I contributed to the development of a high-performance, scalable search engineand web page indexer capable of efficiently processing gigabytes or more of web data without exceeding memory constraints. The system was built in Python and designed to handle large-scale indexing while maintaining optimal retrieval speeds. \nThe search engine achieves sub-300ms ranked searches by leveraging TF-IDF scoring and additional heuristics to deliver search results comparable to Google’s in relevance and ranking. To enhance usability, I helped develop an interactive web GUI using Streamlit, allowing users to dynamically explore and refine search results for an improved experience.",
+        "Link": null
+      },
+      {
+        "mediaSource": "/sudoku_solver.gif",
+        "Title": "Computer Vision Sudoku Solver",
+        "Description": "Developed an advanced Sudoku solver utilizing backtracking search, paired with an intuitive GUI for seamless user interaction. The solver efficiently finds solutions to Sudoku puzzles of varying difficulty levels. \nTo further enhance usability, I engineered a custom Convolutional Neural Network (CNN) using PyTorch, trained on the MNIST dataset, achieving 96% accuracy in digit recognition. This CNN is supported by a data pipeline that processes, transforms, and extracts digits from user-uploaded Sudoku images, allowing users to quickly digitize a Sudoku board for automated solving.",
+        "Link": "https://github.com/karmp/sudoku-solver"
+      },
+      {
+        "mediaSource": "/music_tracker.png",
+        "Title": "Music Release Tracker Discord Bot",
+        "Description": "Developed and deployed a Discord bot that tracks and presents new song release dates across multiple Discord communities with a combined user base of over a thousand. Built using Python and Beautiful Soup, the bot scrapes release date information from various music blogs and formats the data into structured responses. \nUsers can interact with the bot through Discord commands to view release dates for current, past, or upcoming months, as long as the information remains available on the source websites. The bot dynamically fetches data upon request rather than relying on scheduled updates, ensuring that users always receive the most up-to-date information.",
+        "Link": null
+      }
+  ]
+}
