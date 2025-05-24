@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath:
-    process.env.NODE_ENV === "production" ? "/karmp.github.io" : "",
-  assetPrefix:
-    process.env.NODE_ENV === "production" ? "/karmp.github.io/" : "",
+  basePath: "",
+  assetPrefix: "",
   images: { unoptimized: true },
 };
 
