@@ -3,10 +3,10 @@ import Card from "./Card";
 export default function AboutSection({ data }) {
   return (
     <section id="about">
-      <div className="container mx-auto">
+      <div className="container mx-auto py-20">
         <h2 className="text-5xl font-bold text-center text-black">About Me</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-10 ml-4 mr-4 content-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-10 ml-10 mr-10 content-center">
           <Card title="Education" className="text-left text-black mb-4">
             {data.Education.length > 0 ? (
               data.Education.map((edu, index) => (

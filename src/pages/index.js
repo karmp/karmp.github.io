@@ -1,4 +1,3 @@
-import { Roboto_Flex } from "next/font/google";
 import Head from "next/head";
 import Navbar from "@/components/navbar";
 import ProfileSection from "../components/ProfileSection";
@@ -16,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     const fetchMyInfo = async () => {
       try {
-        const response = await fetch("my_info.json"); // Use public path
+        const response = await fetch("my_info.json");
         if (!response.ok) {
           throw new Error("Trouble loading my_info JSON");
         }
@@ -44,7 +43,7 @@ export default function Home() {
       <main className="min-h-screen text-center">
         <ProfileSection data={info} />
         <AboutSection data={info["About Me"]} />
-        {/* <ExperienceSection data={info} /> */}
+        <ExperienceSection data={info["Experience"]} />
         {/* <ProjectsSection data={info} /> */}
         {/* <ContactSection data={info} /> */}
       </main>
