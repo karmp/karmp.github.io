@@ -64,28 +64,28 @@
 
   "Projects": [
     {
-      "img/gif": "./assets/resume_tailorizer.jpg",
-      "title": "Automated Resume Tailorizer",
-      "description": "Designed and developed a scalable full-stack web application that automates the process of tailoring resumes to specific job descriptions. Built using Python, AWS Lambda, API Gateway, and Next.js, the application leverages serverless architecture for high availability and scalability. \nThe system integrates a Large Language Model (LLM) to intelligently parse resume data and job descriptions, generating customized resume content that aligns with job requirements. By automating key aspects of resume optimization, the application reduces manual editing time by 50% and delivers personalized resumes in under 30 seconds.",
-      "link": "https://resume-tailorizer.vercel.app/"
+      "mediaSource": "/resume_tailorizer.jpg",
+      "Title": "Automated Resume Tailorizer",
+      "Description": "Designed and developed a scalable full-stack web application that automates the process of tailoring resumes to specific job descriptions. Built using Python, AWS Lambda, API Gateway, and Next.js, the application leverages serverless architecture for high availability and scalability. \nThe system integrates a Large Language Model (LLM) to intelligently parse resume data and job descriptions, generating customized resume content that aligns with job requirements. By automating key aspects of resume optimization, the application reduces manual editing time by 50% and delivers personalized resumes in under 30 seconds.",
+      "Link": "https://resume-tailorizer.vercel.app/"
     },
     {
-        "img/gif": "./assets/search_engine.gif",
-        "title": "UC Irvine Search Engine",
-        "description": "As part of a class project, I contributed to the development of a high-performance, scalable search engineand web page indexer capable of efficiently processing gigabytes or more of web data without exceeding memory constraints. The system was built in Python and designed to handle large-scale indexing while maintaining optimal retrieval speeds. \nThe search engine achieves sub-300ms ranked searches by leveraging TF-IDF scoring and additional heuristics to deliver search results comparable to Google’s in relevance and ranking. To enhance usability, I helped develop an interactive web GUI using Streamlit, allowing users to dynamically explore and refine search results for an improved experience.",
-        "link": null
+        "mediaSource": "/search_engine.gif",
+        "Title": "UC Irvine Search Engine",
+        "Description": "As part of a class project, I contributed to the development of a high-performance, scalable search engineand web page indexer capable of efficiently processing gigabytes or more of web data without exceeding memory constraints. The system was built in Python and designed to handle large-scale indexing while maintaining optimal retrieval speeds. \nThe search engine achieves sub-300ms ranked searches by leveraging TF-IDF scoring and additional heuristics to deliver search results comparable to Google’s in relevance and ranking. To enhance usability, I helped develop an interactive web GUI using Streamlit, allowing users to dynamically explore and refine search results for an improved experience.",
+        "Link": null
       },
       {
-        "img/gif": "./assets/sudoku_solver.gif",
-        "title": "Computer Vision Sudoku Solver",
-        "description": "Developed an advanced Sudoku solver utilizing backtracking search, paired with an intuitive GUI for seamless user interaction. The solver efficiently finds solutions to Sudoku puzzles of varying difficulty levels. \nTo further enhance usability, I engineered a custom Convolutional Neural Network (CNN) using PyTorch, trained on the MNIST dataset, achieving 96% accuracy in digit recognition. This CNN is supported by a data pipeline that processes, transforms, and extracts digits from user-uploaded Sudoku images, allowing users to quickly digitize a Sudoku board for automated solving.",
-        "link": "https://github.com/karmp/sudoku-solver"
+        "mediaSource": "/sudoku_solver.gif",
+        "Title": "Computer Vision Sudoku Solver",
+        "Description": "Developed an advanced Sudoku solver utilizing backtracking search, paired with an intuitive GUI for seamless user interaction. The solver efficiently finds solutions to Sudoku puzzles of varying difficulty levels. \nTo further enhance usability, I engineered a custom Convolutional Neural Network (CNN) using PyTorch, trained on the MNIST dataset, achieving 96% accuracy in digit recognition. This CNN is supported by a data pipeline that processes, transforms, and extracts digits from user-uploaded Sudoku images, allowing users to quickly digitize a Sudoku board for automated solving.",
+        "Link": "https://github.com/karmp/sudoku-solver"
       },
       {
-        "img/gif": "./assets/music_tracker.png",
-        "title": "Music Release Tracker Discord Bot",
-        "description": "Developed and deployed a Discord bot that tracks and presents new song release dates across multiple Discord communities with a combined user base of over a thousand. Built using Python and Beautiful Soup, the bot scrapes release date information from various music blogs and formats the data into structured responses. \nUsers can interact with the bot through Discord commands to view release dates for current, past, or upcoming months, as long as the information remains available on the source websites. The bot dynamically fetches data upon request rather than relying on scheduled updates, ensuring that users always receive the most up-to-date information.",
-        "link": "https://resume-tailorizer.vercel.app/"
+        "mediaSource": "/music_tracker.png",
+        "Title": "Music Release Tracker Discord Bot",
+        "Description": "Developed and deployed a Discord bot that tracks and presents new song release dates across multiple Discord communities with a combined user base of over a thousand. Built using Python and Beautiful Soup, the bot scrapes release date information from various music blogs and formats the data into structured responses. \nUsers can interact with the bot through Discord commands to view release dates for current, past, or upcoming months, as long as the information remains available on the source websites. The bot dynamically fetches data upon request rather than relying on scheduled updates, ensuring that users always receive the most up-to-date information.",
+        "Link": null
       }
   ]
 }

@@ -44,7 +44,7 @@ export default function Home() {
         <ProfileSection data={info} />
         <AboutSection data={info["About Me"]} />
         <ExperienceSection data={info["Experience"]} />
-        {/* <ProjectsSection data={info} /> */}
+        <ProjectsSection data={info["Projects"]} />
         {/* <ContactSection data={info} /> */}
       </main>
     </div>

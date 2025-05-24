@@ -14,7 +14,7 @@ export default function ProfileSection({ data }) {
           width={400} 
           height={400}
           className="w-full h-full object-cover"
-          priority // Prioritize loading for LCP (Largest Contentful Paint)
+          priority
         />
       </div>
       <div className="self-center text-center md:text-left max-w-2xl">
