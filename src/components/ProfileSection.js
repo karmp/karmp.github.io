@@ -2,18 +2,17 @@ import Image from "next/image";
 import Socials from "./Socials";
 
 export default function ProfileSection({ data }) {
-    console.log(data);
     return (
     <section
       id="profile"
-      className="flex flex-col md:flex-row justify-center items-center gap-20 min-h-screen px-8 py-16 md:py-0"
+      className="flex flex-col md:flex-row justify-center items-center gap-10 min-h-screen px-8"
     >
-      <div className="flex justify-center items-center h-[300px] w-[300px] sm:h-[350px] sm:w-[350px] md:h-[400px] md:w-[400px] my-0 mx-auto overflow-hidden rounded-full shadow-lg">
+      <div className="flex justify-center items-center h-[300px] w-[300px] sm:h-[350px] sm:w-[350px] md:h-[400px] md:w-[400px] my-0 mx-auto overflow-hidden rounded-full">
         <Image
           src="/about_pic_me.jpg"
-          alt="PFicture of Karm"
-          width={400} // Max width to pre-render for Next/Image
-          height={400} // Max height to pre-render for Next/Image
+          alt="Picture of Karm"
+          width={400} 
+          height={400}
           className="w-full h-full object-cover"
           priority // Prioritize loading for LCP (Largest Contentful Paint)
         />

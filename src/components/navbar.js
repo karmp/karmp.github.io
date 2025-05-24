@@ -12,11 +12,9 @@ export default function Navbar() {
     // Main navigation bar wrapper - sticky at the top
     <nav className="sticky top-0 z-50 bg-transparent">
       <div className="container mx-auto px-10 h-20 flex items-center justify-end"> 
-        {/* Hamburger Icon - Always visible, top-left */}
-        {/* z-50 ensures it's above the sliding menu */}
         <button
           onClick={toggleMenu}
-          className="text-gray-800 focus:outline-none focus:text-blue-600 z-50"
+          className="text-black z-50"
           aria-expanded={isOpen} // Accessibility attribute
           aria-controls="mobile-menu" // Accessibility attribute
         >

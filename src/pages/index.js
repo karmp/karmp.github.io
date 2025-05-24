@@ -3,12 +3,11 @@ import Head from "next/head";
 import Navbar from "@/components/navbar";
 import ProfileSection from "../components/ProfileSection";
 import { useState, useEffect } from "react";
-// import AboutSection from '../components/AboutSection';
-// import ExperienceSection from '../components/ExperienceSection';
-// import ProjectsSection from '../components/ProjectsSection';
-// import ContactSection from '../components/ContactSection';
+import AboutSection from '../components/AboutSection';
+import ExperienceSection from '../components/ExperienceSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ContactSection from '../components/ContactSection';
 
-const roboto = Roboto_Flex({ subsets: ["latin"] });
 
 export default function Home() {
   const [info, setInfo] = useState(null);
@@ -42,12 +41,12 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="favicon-16x16.png" />
       </Head>
       <Navbar></Navbar>
-      <main className="min-h-screen py-8 text-center font-sans">
+      <main className="min-h-screen text-center">
         <ProfileSection data={info} />
-        {/* <AboutSection data={aboutSectionData} />
-        <ExperienceSection data={experienceSectionData} />
-        <ProjectsSection data={projectsSectionData} />
-        <ContactSection data={contactSectionData} /> */}
+        <AboutSection data={info["About Me"]} />
+        {/* <ExperienceSection data={info} /> */}
+        {/* <ProjectsSection data={info} /> */}
+        {/* <ContactSection data={info} /> */}
       </main>
     </div>
   );
