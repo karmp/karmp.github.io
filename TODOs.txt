@@ -1,2 +1,7 @@
-1. Re-write personal website in React
-2. Load information from JSON file in repo
+1. Load information from JSON file in repo
+    - Create Profile component
+    - Create Education component
+    - Create Skills component
+    - Create Experience component
+    - Create Projects component
+    - Create Contact component

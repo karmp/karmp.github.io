@@ -1,0 +1,54 @@
+import { Roboto_Flex } from "next/font/google";
+import Head from "next/head";
+import Navbar from "@/components/navbar";
+import ProfileSection from "../components/ProfileSection";
+import { useState, useEffect } from "react";
+// import AboutSection from '../components/AboutSection';
+// import ExperienceSection from '../components/ExperienceSection';
+// import ProjectsSection from '../components/ProjectsSection';
+// import ContactSection from '../components/ContactSection';
+
+const roboto = Roboto_Flex({ subsets: ["latin"] });
+
+export default function Home() {
+  const [info, setInfo] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchMyInfo = async () => {
+      try {
+        const response = await fetch("my_info.json"); // Use public path
+        if (!response.ok) {
+          throw new Error("Trouble loading my_info JSON");
+        }
+        const data = await response.json();
+        setInfo(data);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMyInfo();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+
+  return (
+    <div>
+      <Head>
+        <title>Karm Patel Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="favicon-16x16.png" />
+      </Head>
+      <Navbar></Navbar>
+      <main className="min-h-screen py-8 text-center font-sans">
+        <ProfileSection data={info} />
+        {/* <AboutSection data={aboutSectionData} />
+        <ExperienceSection data={experienceSectionData} />
+        <ProjectsSection data={projectsSectionData} />
+        <ContactSection data={contactSectionData} /> */}
+      </main>
+    </div>
+  );
+}
