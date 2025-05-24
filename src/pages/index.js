@@ -2,11 +2,10 @@ import Head from "next/head";
 import Navbar from "@/components/navbar";
 import ProfileSection from "../components/ProfileSection";
 import { useState, useEffect } from "react";
-import AboutSection from '../components/AboutSection';
-import ExperienceSection from '../components/ExperienceSection';
-import ProjectsSection from '../components/ProjectsSection';
-import ContactSection from '../components/ContactSection';
-
+import AboutSection from "../components/AboutSection";
+import ExperienceSection from "../components/ExperienceSection";
+import ProjectsSection from "../components/ProjectsSection";
+import ContactSection from "../components/ContactSection";
 
 export default function Home() {
   const [info, setInfo] = useState(null);
@@ -45,7 +44,7 @@ export default function Home() {
         <AboutSection data={info["About Me"]} />
         <ExperienceSection data={info["Experience"]} />
         <ProjectsSection data={info["Projects"]} />
-        {/* <ContactSection data={info} /> */}
+        <ContactSection />
       </main>
     </div>
   );
