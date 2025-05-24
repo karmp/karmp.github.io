@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     // Main navigation bar wrapper - sticky at the top
     <nav className="sticky top-0 z-50 bg-transparent">
-      <div className="container mx-auto px-10 h-20 flex items-center justify-end"> 
+      <div className="container mx-auto mr-15 h-20 flex items-center justify-end"> 
         <button
           onClick={toggleMenu}
           className="text-black z-50"

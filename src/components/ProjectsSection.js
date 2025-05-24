@@ -33,7 +33,7 @@ export default function ProjectsSection({ data }) {
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  priority={index < 2}
+                  priority
                 />
               </div>
               <div className="flex-grow h-40 overflow-y-auto text-black pt-2 pr-2 mb-4">
