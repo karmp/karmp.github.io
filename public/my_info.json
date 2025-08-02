@@ -13,9 +13,9 @@
     ],
 
     "Skills": {
-      "Languages": ["Python", "C/C++", "JavaScript", "HTML/CSS", "SQL", "MIPS Assembly"],
-      "Libraries/Frameworks": ["PyTorch", "React", "Streamlit", "Pandas", "NumPy", "Unit Test", "FastAPI", "Matplotlib", "Scikit-Learn", "NTLK"],
-      "Developer Tools": ["Git", "GitHub", "GitLab", "Docker", "Linux", "Bash", "Terminal"],
+      "Languages": ["Python", "C/C++", "HTML/CSS", "SQL", "MIPS Assembly", "JavaScript"],
+      "Libraries/Frameworks": ["PyTorch", "React", "Streamlit", "Pandas", "NumPy", "Unit Test", "FastAPI", "Matplotlib", "Scikit-Learn", "NTLK", "Next.js"],
+      "Developer Tools": ["Git", "GitHub", "GitLab", "Docker", "Linux", "Bash", "Terminal", "Jupyter NoteBook"],
       "Certifications": ["AWS Certified Solutions Architect - Assocaiate, earned February 2025"]
     }
   },
@@ -26,18 +26,18 @@
       "Company": "University of California, Irvine",
       "Dates": "Sep. 2024 - Dec. 2024",
       "Highlights": [
-        "Provided conceptual conceptual support to 300+ students during lectures, enhancing comprehension of advanced data structure topics",
+        "Provided conceptual support to 300+ students during lectures, enhancing comprehension of advanced data structure topics",
         "Guided students through solving complex problems involving various data structures and algorithms"
       ]
     },
     {
-        "Title": "Research Assistant",
+        "Title": "Research Assistant, Autonomous Systems Security Lab",
         "Company": "University of California, Irvine",
         "Dates": "Jun. 2024 - Aug. 2024",
         "Highlights": [
-            "Increased the number of available security tests for Autonomous Driving Systems (ADS) by 2x",
-            "Validated existing research on adversarial attacks by testing two ADSs with CARLA and LGSVL simulators",
-            "Simulated Shapeshifter, RP2, and SIB stop sign attacks and discovered custom ADS failed in 33% of simulations"
+            "Increased the number of security tests on the lab's Autonomous Driving Systems (ADS) testing platform by 2x",
+            "Validated existing research on adversarial attacks by testing two AD systems using Python and Docker",
+            "Simulated stop sign attacks and discovered a custom ADS fails in 33% of simulations"
         ]
       },
       {
@@ -45,7 +45,7 @@
         "Company": "University of California, Irvine",
         "Dates": "Jan. 2024 - Mar. 2024",
         "Highlights": [
-            "Hosted weekly office hours for a class of 300 students, providing programming and conceptual assistance",
+            "Hosted weekly office hours for a class of 300 students, providing Python programming and conceptual assistance",
             "Improved student success by clarifying project inquiries and providing debugging assistance during in-person lab",
             "Proactively communicated student challenges to overseeing Professor, enabling clarification of common misconceptions to students"
         ]
@@ -63,6 +63,12 @@
   ],
 
   "Projects": [
+      {
+      "mediaSource": "/warframe-market-analyzer.png",
+      "Title": "Warframe Market Analyzer",
+      "Description": "Engineered a full-stack application using Python, Next.js, AWS Lambda, API Gateway, and DynamoDB to analyze and display profitable in-game trading opportunities. Developed a scalable backend with automated data updates and low-latency retrieval. Leveraged server-side caching to reduce redundant API requests, minimizing backend resource costs. Utilized the tool to earn over $50 in premium in-game currency through optimized trading decisions.",
+      "Link": "https://warframe-market-item-analyzer.vercel.app/"
+    },
     {
       "mediaSource": "/resume_tailorizer.jpg",
       "Title": "Automated Resume Tailorizer",
