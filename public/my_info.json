@@ -36,7 +36,7 @@
         "Dates": "Jun. 2024 - Aug. 2024",
         "Highlights": [
             "Increased the number of security tests on the lab's Autonomous Driving Systems (ADS) testing platform by 2x",
-            "Validated existing research on adversarial attacks by testing two AD systems using Python and Docker",
+            "Validated existing research on adversarial attacks by testing two AD systems using Python, Docker, and Linux",
             "Simulated stop sign attacks and discovered a custom ADS fails in 33% of simulations"
         ]
       },
