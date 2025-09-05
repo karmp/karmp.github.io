@@ -13,7 +13,7 @@
     ],
 
     "Skills": {
-      "Languages": ["Python", "C/C++", "HTML/CSS", "SQL", "MIPS Assembly", "JavaScript"],
+      "Languages": ["Python", "C/C++", "Java", "JavaScript", "HTML/CSS", "SQL", "MIPS Assembly"],
       "Libraries/Frameworks": ["PyTorch", "React", "Streamlit", "Pandas", "NumPy", "Unit Test", "FastAPI", "Matplotlib", "Scikit-Learn", "NTLK", "Next.js"],
       "Developer Tools": ["Git", "GitHub", "GitLab", "Docker", "Linux", "Bash", "Terminal", "Jupyter NoteBook"],
       "Certifications": ["AWS Certified Solutions Architect - Assocaiate, earned February 2025"]
