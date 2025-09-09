@@ -4,6 +4,12 @@
   "GitHub": "https://github.com/karmp",
   "About Me": {
     "Education": [
+        {
+        "University Name": "Georgia Institute of Technology",
+        "Degree": "Master of Science in Computer Science",
+        "GPA": 4.0,
+        "Other Info": []
+      },
       {
         "University Name": "University of California, Irvine",
         "Degree": "Bachelor of Science in Computer Science",
@@ -35,9 +41,9 @@
         "Company": "University of California, Irvine",
         "Dates": "Jun. 2024 - Aug. 2024",
         "Highlights": [
-            "Increased the number of security tests on the lab's Autonomous Driving Systems (ADS) testing platform by 2x",
-            "Validated existing research on adversarial attacks by testing two AD systems using Python, Docker, and Linux",
-            "Simulated stop sign attacks and discovered a custom ADS fails in 33% of simulations"
+          "Increased the number of available security tests on the lab’s Autonomous Driving Systems testing platform by 2x",
+          "Validated existing research on adversarial attacks against AI systems using Python, Docker, and Linux",         
+          "Simulated stop sign attacks and discovered a custom AI driving system fails in 33% of simulations"
         ]
       },
       {
@@ -45,7 +51,7 @@
         "Company": "University of California, Irvine",
         "Dates": "Jan. 2024 - Mar. 2024",
         "Highlights": [
-            "Hosted weekly office hours for a class of 300 students, providing Python programming and conceptual assistance",
+            "Led weekly office hours for a class of 300 students, providing Python programming and conceptual assistance",
             "Improved student success by clarifying project inquiries and providing debugging assistance during in-person lab",
             "Proactively communicated student challenges to overseeing Professor, enabling clarification of common misconceptions to students"
         ]
@@ -55,9 +61,10 @@
         "Company": "Kavayah Cloud",
         "Dates": "Jun. 2023 - Aug. 2023",
         "Highlights": [
-            "Developed Python software that takes a string of software names as input and returns their standardized versions",
+            "Imported XML data to a MongoDB database using Java",
+            "Developed a Python REST-API to take a string of software names as input and returns their standardized versions",
             "Achieved a 30% improvement in matching accuracy by algorithmically comparing retrieved strings with input",
-            "Developed a REST-API to streamline program usage, enhance accessibility, and provide it as a service"
+            "Conducted unit tests to determine the best string metric algorithm for the full-text search"
         ]
       } 
   ],
