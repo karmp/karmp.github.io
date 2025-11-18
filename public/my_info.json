@@ -80,7 +80,7 @@
       "mediaSource": "/resume_tailorizer.jpg",
       "Title": "Automated Resume Tailorizer",
       "Description": "Designed and developed a scalable full-stack web application that automates the process of tailoring resumes to specific job descriptions. Built using Python, AWS Lambda, API Gateway, and Next.js, the application leverages serverless architecture for high availability and scalability. \nThe system integrates a Large Language Model (LLM) to intelligently parse resume data and job descriptions, generating customized resume content that aligns with job requirements. By automating key aspects of resume optimization, the application reduces manual editing time by 50% and delivers personalized resumes in under 30 seconds.",
-      "Link": "https://resume-tailorizer.vercel.app/"
+      "Link": null
     },
     {
         "mediaSource": "/search_engine.gif",
