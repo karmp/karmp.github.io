@@ -31,7 +31,11 @@
       "Title": "Software Engineer Intern",
       "Company": "Pinterest",
       "Dates": "May. 2026 - Aug. 2026",
-      "Highlights": [""
+      "Highlights": [
+      "Engineered a Python-based retry mechanism for preempted Kubernetes jobs, reducing idle resource costs by 75%",
+      "Extended the Volcano scheduler and a custom Kubernetes operator to annotate evicted jobs for a highly reliable preemption signal",
+      "Developed a Go server utilizing Kubernetes shared informers to monitor cluster usage, reducing API latency by 6x",
+      "Implemented an LLM agent skill to query the Go server, eliminating redundant API calls via local request caching"
       ]
     },
     {
